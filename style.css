@@ -1,10 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 body {
    font-family: Kurale, sans-serif;
    background: #ED6044;
 }
 
-nav .a {
-   margin: ;
+nav a {
+   margin: 50px;
+   color: black;
+   text-decoration: none;
+}
+
+nav {
+   padding: 3vh;
+}
+
+.music {
+   text-align: center;
+   font-size: xx-large;
+
+}
+
+.players {
+   background-color: #171717;
+   color: white;
+   text-align: center;
+}
+
+.media {
+   display: inline-block;
+   margin: 50px;
+}
+
+.music img {
+   margin: -12px;
+   width: 100%;
+}
+
+.records img {
+   width: 19.5%;
+   animation: rotate 3s linear infinite;
+}
+
+.records {
+   text-align: center;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.albums img {
+   display: block;
+   width: 100%;
+}
+
+.albums div {
+   display: inline-block;
+   width: 19.5%;
+   vertical-align: middle;
+}
+
+.albums {
+   background-color: #171717;
+   padding: 20px 0;
+}
+
+footer {
+   color: white;
+   text-align: center;
+   padding: 50px;
+   font-size: xx-large;
+}
+
+@media (max-width:650px) {
+   .records img{
+      width: 30%;
+   }
+
+   .albums div {
+      width: 100%;
+   }
+
+   .music img{
+     width: 100%;
+   }
+
+   nav a {
+      display: block;
+      text-align: center;
+   }
+
+   .players img {
+      width: 100%;
+   }
+
+   body {
+      background: #16a781;
+   }
 }
